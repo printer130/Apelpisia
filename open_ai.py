@@ -12,5 +12,5 @@ def msg_from_openai(prompt_text):
       model=model,
       prompt=prompt_text,
       temperature=0.7,
-      max_tokens=96,
+      max_tokens=1000,
     )

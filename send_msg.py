@@ -15,6 +15,6 @@ def send_msg(msg_from_whatsapp):
     from_=twilio_default_number,
     to=twilio_to
   )
-  print(message.sid)
+  print(message)
   return message
 

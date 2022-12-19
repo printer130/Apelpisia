@@ -14,5 +14,8 @@ from open_ai import msg_from_openai
 # openai.Model.list()
 def client(prompt_text):
   response = msg_from_openai(prompt_text)
+  print("[*]")
+  print(response)
+  print("[*]")
   story = response['choices'][0]['text']
   return str(story)
