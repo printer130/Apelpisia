@@ -24,7 +24,9 @@ pip install -r requirements.txt
 ## Usage
 
 ```python
-ngrok http 8080
+ngrok http 8080 # This URL goes messages in twilio (web hook)
+
+python3 index.py
 ```
 
 ## Contributing
