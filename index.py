@@ -19,4 +19,5 @@ def reply():
     response = MessagingResponse()
     response.message(res)
     return str(response)
-run(host='localhost', port=8080, debug=True)
+
+run(host='0.0.0.0', port=9998)
