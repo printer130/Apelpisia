@@ -1,7 +1,15 @@
-from bottle import run, post, request, error
+from bottle import run, post, request, error, get, route
 from twilio.twiml.messaging_response import MessagingResponse
 from completion import client
 from send_msg import send_msg
+
+@get('/')
+def first():
+  return 'hola'
+
+@route('/hello')
+def hello():
+    return "Hello World!"
 
 @post('/message')
 def reply():
